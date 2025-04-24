@@ -1,0 +1,207 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4; /* Açık gri bir arka plan */
+    color: #333; /* Koyu gri metin rengi */
+}
+#direk {
+    position: relative;
+    width: 80px;
+    height: 150px;
+    border-left: 10px solid #333;
+    margin-bottom: 20px;
+}
+
+#ust-cizgi {
+    position: absolute;
+    top: 0px;
+    left: -16px;
+    width: 70px;
+    height: 10px;
+    background-color: #333;
+}
+
+#asma-ipi {
+    position: absolute;
+    top: 2px;
+    left: 52px;
+    width: 2px;
+    height: 30px;
+    background-color: #333;
+}
+h1 {
+    color: #007bff; /* Mavi başlık */
+}
+
+#kategori-alani {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #6c757d; /* Gri kategori */
+}
+
+#kelime-alani {
+    font-size: 2.5em;
+    margin: 30px 0;
+    color: #28a745; /* Yeşil kelime alanı */
+}
+
+#yanlis-tahminler {
+    margin-bottom: 15px;
+    color: #dc3545; /* Kırmızı yanlış tahminler */
+}
+
+#adam-cizimi {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+
+
+#kafa {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #343a40; /* Koyu gri kafa */
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    display: none; /* Başlangıçta gizli */
+}
+
+#govde {
+    width: 2px;
+    height: 50px;
+    background-color: #343a40; /* Koyu gri gövde */
+    position: absolute;
+    top: 63px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Başlangıçta gizli */
+}
+
+#kol-sol {
+    width: 40px;
+    height: 3px;
+    background-color: #343a40; /* Koyu gri kollar */
+    position: absolute;
+    top: 76px;
+    left: 16px;
+    transform: rotate(-45deg);
+    display: none; /* Başlangıçta gizli */
+}
+
+#kol-sag {
+    width: 40px;
+    height: 3px;
+    background-color: #343a40; /* Koyu gri kollar */
+    position: absolute;
+    top: 76px;
+    right: 15px;
+    transform: rotate(45deg);
+    display: none; /* Başlangıçta gizli */
+}
+
+#bacak-sol {
+    width: 30px;
+    height: 3px;
+    background-color: #343a40;
+    position: absolute;
+    bottom: 15px; /* Bacakların alt kısmı yerden 30px yukarıda */
+    left: 27px;   /* Gövdenin ortasına yakın bir başlangıç */
+    transform-origin: top left; /* Döndürme noktasını sol üst köşe yap */
+    transform: rotate(-45deg); /* Sola doğru 45 derece döndür */
+    display: none;
+}
+
+#bacak-sag {
+    width: 30px;
+    height: 3px;
+    background-color: #343a40;
+    position: absolute;
+    bottom: 16px; /* Bacakların alt kısmı yerden 30px yukarıda */
+    right: 29px;  /* Gövdenin ortasına yakın bir başlangıç */
+    transform-origin: top right; /* Döndürme noktasını sağ üst köşe yap */
+    transform: rotate(45deg);  /* Sağa doğru 45 derece döndür */
+    display: none;
+}
+
+#mesaj {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 25px;
+    color: #17a2b8; /* Turkuaz mesaj */
+}
+
+input[type="text"] {
+    padding: 12px;
+    margin-right: 15px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #007bff; /* Mavi buton */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px; /* Butonlar arasında boşluk */
+}
+
+button:hover {
+    background-color: #0056b3; /* Butonun üzerine gelindiğinde daha koyu mavi */
+}
+
+#yeni-kelime {
+    display: none; /* Başlangıçta gizli */
+    background-color: #28a745; /* Yeşil yeni kelime butonu */
+}
+
+#yeni-kelime:hover {
+    background-color: #1e7e34; /* Yeni kelime butonu hover rengi */
+}
+
+footer {
+    background-color: #333; /* Koyu bir arka plan rengi */
+    color: white; /* Beyaz metin rengi */
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Tüm genişliği kaplasın */
+    position: fixed; /* Sayfanın en altında sabit dursun */
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0; /* P etiketinin varsayılan boşluklarını kaldır */
+    font-size: 0.9em; /* Biraz daha küçük bir yazı boyutu */
+}
+.fa {
+    padding: 7px;
+    font-size: 80px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    right: 0px;
+    margin: 5px 5px;
+    border-radius: 8px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-instagram {
+    background: #0084ff;
+    color: white;
+  }  
+  .fa-linkedin {
+    background: #0084ff;
+    color: white;
+  }
